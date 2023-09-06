@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+
+    </head>
+    <style>
+
+   	.btn {
+		background-color: #2894FF	;
+		border-radius:15px;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+}
+
+
+
+    .flex-container {
+      display: flex;
+      height: 330px;
+      padding: 20px;
+      background-color: #526E89;
+      flex-direction:row;
+
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-start;
+}
+
+
+    </style>
+    <body bgcolor="	#003D79">
+        <center>
+            <div class='cont' style="font-family:cursive;background-color:#003D79;">
+                <font size="10"  color="white" face="微軟正黑體">Online medical diagnosis</font>
+                <p></p>
+				<font size="5" color="white" face="微軟正黑體">In order to reduce the pressure on doctors and improve the quality of medical care in rural areas</font>
+                <p></p>
+                <font size="5" color="white" face="微軟正黑體">Quickly identify whether there is pneumonia.</font>
+                <p></p>
+                <font size="5" color="white" face="微軟正黑體">Allows doctors to diagnosis large numbers of patients at short time</font>
+            </div>
+            <img src="http://pic.616pic.com/bg_w1180/00/16/40/J4DE0mPqpn.jpg!/fh/300" width="1000" height="400"  >
+            <div class="flex-container"  style="background-color:#003D79;">
+            <div class="nor">
+                <P><font size="5" color="white" face="微軟正黑體">Using AI artificial intelligence, fast and accurate judgment</font></P>
+
+                <img src="https://img.technews.tw/wp-content/uploads/2020/05/11123358/FDA-Clearance-FB-Linked-In-768x402-624x327.jpg" width="600" height="300" >
+
+            </div>
+            
+            </div>
+
+            <br>
+
+        <form method="POST" action="{{url_for('home')}}" enctype="multipart/form-data" >
+            <p><font size="5" color="white" face="微軟正黑體">Please upload the patient’s chest X-ray</font></p>
+            <input type="file" name='image' class='btn'  ><br><br><br>
+            <i class="fa fa-photo"></i>
+            <input type="submit" class='btn'>
+        </form>
+
+    </center>
+
+    </body>
+</html>

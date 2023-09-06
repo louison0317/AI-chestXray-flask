@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+   	<style>
+
+   	.btn {
+		background-color: #2894FF	;
+		border-radius:15px;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+}
+
+
+
+    .flex-container {
+      display: flex;
+      height: 330px;
+      padding: 20px;
+      background-color: #526E89;
+      flex-direction:row;
+
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-start;
+}
+
+
+    </style>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="static/style.css" rel="stylesheet">
+    </head>
+    <body bgcolor="	#003D79">
+        <center>
+            <div class='cont' style="background-color:#003060;font-family:cursive">
+
+
+            {% if data[1] > 0.7 %}
+            <font size="8"  color="white" face="微軟正黑體">The diagnosis was Pneumonia</font>
+                <p></p>
+                <font size="5"  color="white" face="微軟正黑體">Please seek treatment as soon as possible</font>
+                <p></p>
+                <img src="https://images.everydayhealth.com/images/lung-cancer-diagnosis-and-tests-1440x810.jpg?sfvrsn=a2e6407c_4" width="400" height="200">
+
+            <embed src="http://pcnet.idv.tw/midi/First Lov.mid" autostart=true hidden=true>
+            {%endif%}
+            {%if 0.7 >= data[1] >= 0.5 %}
+                <font size="8"  color="white" face="微軟正黑體">The diagnosis was Pneumonia</font>
+                <p></p>
+                <font size="5"  color="white" face="微軟正黑體">but less obvious</font>
+                <p></p>
+                <font size="5"  color="white" face="微軟正黑體">Physicians please evaluate carefully or conduct more in-depth examinations</font>
+                <p></p>
+                <img src="https://images.everydayhealth.com/images/lung-cancer-diagnosis-and-tests-1440x810.jpg?sfvrsn=a2e6407c_4" width="400" height="200">
+                
+            {%endif%}
+            {%if  0.5 > data[1] >= 0.3 %}
+                <font size="8"  color="white" face="微軟正黑體">The diagnosis result is Normal</font>
+                <p></p>
+                <font size="5"  color="white" face="微軟正黑體">but there are potential risks</font>
+                <p></p>
+                <font size="5"  color="white" face="微軟正黑體">Physicians please evaluate carefully or conduct more in-depth examinations</font>
+                <p></p>
+                <img src="https://images.everydayhealth.com/images/lung-cancer-diagnosis-and-tests-1440x810.jpg?sfvrsn=a2e6407c_4" width="400" height="200">
+            {%endif%}
+            {%if 0.3 > data[1]%}
+            <font size="8"  color="white" face="微軟正黑體">The diagnosis result is Normal</font>
+                <p></p>
+            <font size="5"  color="white" face="微軟正黑體">Physicians still need to carefully evaluate</font>
+                <p></p>
+                <img src="https://images.everydayhealth.com/images/lung-cancer-diagnosis-and-tests-1440x810.jpg?sfvrsn=a2e6407c_4" width="400" height="200">
+            {%endif%}
+
+
+        </div>
+         <div style="font-family:cursive;background-color:rgb(211,211,211)">
+            <h1>The diagnosis is<br> Normal  <span>{{data[2]}}%</span> <br>Pneumonia  <span>{{data[3]}}%</span><br> </h1 >
+            
+            <!-- <img src="{{url_for('load_img')}}" alt='img' width="800" height="600">
+             <i class="fa fa-photo"></i> -->
+
+         </div>
+             <a href="/"    class='btn' >Diagnose again</a>
+        </center>
+
+    </body>
+</html>
