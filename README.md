@@ -25,5 +25,5 @@ This Flask website use a deep learning model to perform pneumonia detection base
    ```
 3. start main.py
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   python3 main.py
    ```
