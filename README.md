@@ -14,18 +14,16 @@ This Flask website use a deep learning model to perform pneumonia detection base
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the project
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/louison0317/AI-chestXray-flask.git
    ```
-3. Install NPM packages
+2. Install packages
    ```sh
-   npm install
+   pip3 install reqirements.
    ```
-4. Enter your API in `config.js`
+3. start main.py
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
