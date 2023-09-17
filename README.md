@@ -5,8 +5,8 @@ This Flask website use a deep learning model to perform pneumonia detection base
 ## About The Project
 
 * AI-Powered Diagnosis: Leveraging the robust `VGG16 model` with an impressive `accuracy of 93.75%`, this system is designed for accurate detection of pneumonia.
+* Accurate Probability Scores: The AI system not only detects the presence of pneumonia but also `provides accurate probability scores` for its diagnosis. This allows doctors to gauge the level of confidence in the AI's assessment.
 * Efficient Diagnosis Process: This system significantly speeds up the diagnostic process for medical professionals. By automating the initial assessment, doctors can quickly evaluate a large number of patient cases.
-* Accurate Probability Scores: The AI system not only detects the presence of pneumonia but also provides accurate probability scores for its diagnosis. This allows doctors to gauge the level of confidence in the AI's assessment.
 
 
 <!-- GETTING STARTED -->
